@@ -15,17 +15,17 @@ export default function PaymentMethodSelection({ onSelect, onBack }: PaymentMeth
         {/* <p className="text-sm text-muted-foreground mb-2">forma de pagamento</p> */}
         <div className="flex items-center justify-between">
           <Logo />
-          <button
-            onClick={onBack}
-            className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted"
-          >
-            <ChevronLeft className="w-5 h-5" />
-            <span className="font-medium">Voltar</span>
-          </button>
         </div>
       </div>
 
       <div className="p-6 space-y-6">
+        <button
+          onClick={onBack}
+          className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted"
+        >
+          <ChevronLeft className="w-5 h-5" />
+          <span className="font-medium">Voltar</span>
+        </button>
         <h2 className="text-xl font-semibold text-foreground">Escolha a forma de pagamento</h2>
 
         <div className="space-y-4">

@@ -40,17 +40,17 @@ export default function PixPayment({ onPayment, onBack }: PixPaymentProps) {
         {/* <p className="text-sm text-muted-foreground mb-2">Pix</p> */}
         <div className="flex items-center justify-between">
           <Logo />
-          <button
-            onClick={onBack}
-            className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted"
-          >
-            <ChevronLeft className="w-5 h-5" />
-            <span className="font-medium">Voltar</span>
-          </button>
         </div>
       </div>
 
       <div className="p-6 space-y-6">
+        <button
+          onClick={onBack}
+          className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted"
+        >
+          <ChevronLeft className="w-5 h-5" />
+          <span className="font-medium">Voltar</span>
+        </button>
         <div className="flex flex-col items-center space-y-4">
           <div
             style={{ borderColor: "var(--color-cyan)" }}

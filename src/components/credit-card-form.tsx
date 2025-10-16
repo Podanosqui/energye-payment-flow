@@ -40,16 +40,17 @@ export default function CreditCardForm({ onSubmit, onBack }: CreditCardFormProps
         {/* <p className="text-sm text-muted-foreground mb-2">cartão de crédito</p> */}
         <div className="flex items-center justify-between">
           <Logo />
-          <button
+        </div>
+      </div>
+
+      <button
             type="button"
             onClick={onBack}
-            className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted"
+            className="flex items-center gap-1.5 text-foreground hover:text-muted-foreground transition-colors px-3 py-2 rounded-lg hover:bg-muted mt-2"
           >
             <ChevronLeft className="w-5 h-5" />
             <span className="font-medium">Voltar</span>
           </button>
-        </div>
-      </div>
 
       <form onSubmit={handleSubmit} className="p-6 space-y-6">
         <div className="space-y-4">
